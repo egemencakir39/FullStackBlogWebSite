@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Blogcard = () => {
   return (
@@ -7,7 +8,7 @@ const Blogcard = () => {
       <div className="">
         <h3 className="py-6 text-xl">Lorem Ipsum</h3>
         <div className="flex justify-between">
-          <p>#Nature</p>
+          <p className="text-green-800 font-bold">#Nature</p>
           <p className="text-right pb-2">01.01.2024</p>
         </div>
 
@@ -16,7 +17,9 @@ const Blogcard = () => {
           ratione, culpa commodi expedita placeat suscipit voluptatum cum sit.
           Pariatur?
         </p>
-        <button className="text-xl px-4">Read More</button>
+        <Link href={"/blog/1"}>
+          <button className="text-xl px-4">Read More</button>
+        </Link>
       </div>
     </div>
   );

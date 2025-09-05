@@ -7,6 +7,7 @@
 /* === FONTS === */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
 
 
 /* === BASE STYLES === */
@@ -28,5 +29,8 @@ button {
 }
 
 input, textarea {
-  @apply border rounded-md px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500;
+  @apply border rounded-md px-5 py-2 outline-none focus:ring-2 focus:ring-blue-500;
+}
+.my-blog-title {
+  font-family: 'Imperial Script', cursive;
 }

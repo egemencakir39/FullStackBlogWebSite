@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { useState } from "react";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import Image from "next/image";
@@ -10,7 +11,8 @@ const Header = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <header className="flex justify-around sticky top-0 py-8 bg-gradient-to-r from-emerald-400 to-lime-400bg-gradient-to-r from-emerald-400 to-lime-400" >
-      <div>
+     <Link href="/">
+      < div className="cursor-pointer">
         <Image
           src="/blogLogo.png"
           alt="logo"
@@ -19,6 +21,7 @@ const Header = () => {
           className="object-contain"
         />
       </div>
+      </Link>
       <nav className="hidden md:flex gap-x-6 text-xl font-medium items-center text-gray-800 font-['Plus_Jakarta_Sans']">
         <a
           href="#"
@@ -45,10 +48,12 @@ const Header = () => {
           <FaSearch />
         </button>
       </nav>
-      <button>
+     <Link href="/admin/login">
+      <button className="flex items-center">
         <p className="mx-3 font-medium">Yönetici Girişi</p>
         <AdminPanelSettingsIcon />
       </button>
+    </Link>
       {showModal && <SearchModal onClose={() => setShowModal(false)} />}
     </header>
   );
