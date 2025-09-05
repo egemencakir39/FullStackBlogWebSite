@@ -1,0 +1,32 @@
+/* === TAILWIND CORE === */
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+@import "tailwindcss";
+
+/* === FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+
+/* === BASE STYLES === */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  @apply font-sans text-black bg-white;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight;
+}
+
+
+
+button {
+  @apply flex p-2 items-center text-white bg-green-600 rounded-2xl hover:bg-green-300 hover:text-green-800 transition-all font-['Plus_Jakarta_Sans']
+}
+
+input, textarea {
+  @apply border rounded-md px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500;
+}
