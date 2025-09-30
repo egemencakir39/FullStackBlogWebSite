@@ -50,7 +50,7 @@ const UpdateModal = ({ onClose, product }) => {
         }));
       } else {
         alert("Resim yüklenemedi.");
-        console.log("Cloudinary uploader:", cloudinary.uploader);
+
       }
     } catch (err) {
       console.error(err);

@@ -5,6 +5,8 @@ import { getProductsById } from "@/redux/productSlice";
 import React, { use } from "react";
 import { useParams } from "next/navigation";
 import { CircularProgress, IconButton } from "@mui/material";
+import { AddComment } from "@mui/icons-material";
+import AddComments from "@/components/AddComments";
 
 const page = () => {
   const dispatch = useDispatch();
@@ -51,6 +53,7 @@ const page = () => {
           <p className="text-black font-bold">Yazar: {authorName}</p>
           <p className="">{publishedAt}</p>
         </div>
+        <AddComments/>
       </div>
     </div>
   );
