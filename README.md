@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+BlogWebsite
 
-## Getting Started
+Basit ama işlevsel bir kişisel blog platformu.
+Yönetici (admin) JWT tabanlı giriş yaparak yeni postlar oluşturabilir, düzenleyebilir veya silebilir.
+Ziyaretçiler ise onaylanmış gönderileri okuyabilir.
+Tamamen Next.js + MongoDB altyapısı üzerine kurulmuştur.
 
-First, run the development server:
+🚀 Özellikler
+👤 Yönetici (Admin)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+JWT token tabanlı güvenli giriş sistemi
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Yeni blog yazısı oluşturma (başlık, içerik, fotoğraf ekleme)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Mevcut gönderileri düzenleme veya silme
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Cloudinary entegrasyonu ile görsel yükleme desteği
 
-## Learn More
+Admin panelinde tüm postların listesi ve düzenleme modalı
 
-To learn more about Next.js, take a look at the following resources:
+🧑‍💻 Kullanıcı
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Yayınlanmış (onaylanmış) gönderileri görüntüleme
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Post detay sayfasında içerik ve görselleri okuma
 
-## Deploy on Vercel
+Basit, hızlı ve responsive arayüz
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Yorum sistemi
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⚙️ Teknolojiler
+
+Teknoloji	Açıklama
+Next.js 15	Frontend + Backend birleşik tam stack yapı
+React	Arayüz ve component yapısı
+Redux Toolkit	Global state yönetimi (login, loading, error)
+MongoDB + Mongoose	Veritabanı ve model yapısı
+JWT (Json Web Token)	Kimlik doğrulama
+BCRYPT şifre hash
+Cloudinary	Görsel yükleme ve barındırma
+Tailwind CSS	Modern responsive tasarım
+Axios	API istekleri
+MUI	UI bileşenleri (Spinner, Modal, vb.)
+
+📢 Live
+
+blog-site-omega-ebon.vercel.app/
