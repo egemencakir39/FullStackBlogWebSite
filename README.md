@@ -2,7 +2,7 @@ BlogWebsite
 
 Basit ama işlevsel bir kişisel blog platformu.
 Yönetici (admin) JWT tabanlı giriş yaparak yeni postlar oluşturabilir, düzenleyebilir veya silebilir.
-Ziyaretçiler ise onaylanmış gönderileri okuyabilir.
+Ziyaretçiler ise gönderileri okuyabilir.
 Tamamen Next.js + MongoDB altyapısı üzerine kurulmuştur.
 
 🚀 Özellikler
@@ -20,13 +20,13 @@ Admin panelinde tüm postların listesi ve düzenleme modalı
 
 🧑‍💻 Kullanıcı
 
-Yayınlanmış (onaylanmış) gönderileri görüntüleme
+Yayınlanmış gönderileri görüntüleme
 
 Post detay sayfasında içerik ve görselleri okuma
 
 Basit, hızlı ve responsive arayüz
 
-Yorum sistemi
+Yorum atma
 
 ⚙️ Teknolojiler
 
